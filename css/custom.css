@@ -4,9 +4,30 @@ body {
     font-family: Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    background: black;
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(rgb(0, 0, 0) 80%,rgba(128, 128, 128, 0.466) 20%); */
+    
 }
-
+.master{
+    padding-left: 6rem;
+    padding-right: 6rem;
+    max-width: 1280px;
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+main{
+    width: 50%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.Main{
+    display: flex;
+    gap: 1rem;
+}
+header{
+    max-width: fit-content;
+}
 .highlight {
     position: fixed;
     top: 0;
@@ -53,3 +74,36 @@ color: aliceblue;
 .CV{
     font-size: 1.5rem;
 }
+.resume{
+    display: flex !important;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    max-width: fit-content;
+}
+.resumelink{
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    line-height: 1;
+    opacity: 0.8;
+    color: rgb(235, 229, 229);
+    letter-spacing: -.025em;
+    font-weight: 700;
+}
+.resume:hover{
+color: rgb(0, 26, 175)!important;
+}
+ .arrowbox{
+    height: 1rem;
+    width: 1rem;
+    font-size: 0.8rem;
+    /* align-content: center; */
+    margin-left: 5px;
+    margin-bottom:.5rem;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+ }
+ .resume:hover .arrowbox{
+    transform: translate(5px, -5px);
+ }
