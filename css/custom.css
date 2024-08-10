@@ -34,7 +34,7 @@ header{
     left: 0;
     width: 700px; /* Increased size */
     height: 700px; /* Increased size */
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.178) 0%, rgba(255, 255, 255, 0) 90%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.095) 0%, rgba(255, 255, 255, 0) 90%);
     pointer-events: none;
     border-radius: 50%; /* Ensures the circle shape */
     transform: translate(-50%, -50%);
@@ -107,3 +107,40 @@ color: rgb(0, 26, 175)!important;
  .resume:hover .arrowbox{
     transform: translate(5px, -5px);
  }
+ .pill{
+    display: block;
+    width: 1.5rem;
+    height: 1px;
+    background-color: aliceblue;
+    padding-right: 5px;
+    transition: width 0.3s ease-out;
+ }
+ li{
+    list-style: none;
+ }
+.menulink {
+    display: flex;
+    align-items: center;
+    color: #dde2e9;
+    text-decoration: none;
+    gap: 10px;
+    max-width: fit-content;
+    font-size: 20px;
+    
+}
+.menulink:hover .pill{
+    width: 4rem;
+}
+.menulink .active {
+    display: flex;
+    align-items: center;
+    color: #3879d4;
+    text-decoration: none;
+    gap: 10px;
+    max-width: fit-content;
+    font-size: 20px;
+    
+}
+.menulink.active  .pill{
+    width: 4rem;
+}
