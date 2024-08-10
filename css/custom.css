@@ -6,82 +6,123 @@ body {
     overflow: hidden;
     background: rgb(0, 0, 0);
     /* background: linear-gradient(rgb(0, 0, 0) 80%,rgba(128, 128, 128, 0.466) 20%); */
-    
+
 }
-.master{
-    padding-left: 6rem;
-    padding-right: 6rem;
+a {
+    color: none;
+    text-decoration: none;
+}
+.master {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     max-width: 1280px;
     min-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
-main{
-    width: 50%;
-    padding-top: 6rem;
+
+main {
+    width: 55%;
+    /* padding-top: 6rem; */
     padding-bottom: 6rem;
 }
-.Main{
+
+.Main {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 2rem;
 }
-header{
+
+header {
     max-width: fit-content;
+    width: 40%;
 }
+
 .highlight {
     position: fixed;
     top: 0;
     left: 0;
-    width: 700px; /* Increased size */
-    height: 700px; /* Increased size */
+    width: 700px;
+    /* Increased size */
+    height: 700px;
+    /* Increased size */
     background: radial-gradient(circle, rgba(255, 255, 255, 0.095) 0%, rgba(255, 255, 255, 0) 90%);
     pointer-events: none;
-    border-radius: 50%; /* Ensures the circle shape */
+    border-radius: 50%;
+    /* Ensures the circle shape */
     transform: translate(-50%, -50%);
     transition: background 0.3s ease-out;
     z-index: 9999;
 }
-.hero{
-color: inherit;
-text-decoration: none;
-font-size: 3rem;
-line-height: 1;
-opacity: 0.8;
-color: rgb(235, 229, 229);
-letter-spacing: -.025em;
-font-weight: 700;
-}   
-.hero:hover{
-    color:  rgb(255, 255, 255);
+
+.hero {
+    color: inherit;
+    text-decoration: none;
+    font-size: 2.2rem;
+    line-height: 1;
+    opacity: 0.8;
+    color: rgb(235, 229, 229);
+    letter-spacing: -.025em;
+    font-weight: 700;
 }
-.heroDeets{
-    color:  rgb(177, 166, 166);
+
+.hero:hover {
+    color: rgb(255, 255, 255);
 }
-.intro{
-    font-size: 20px!important;
-    color:  rgb(97, 92, 92);
-}
-.contactIcon{
-    font-size: 2rem;color: rgb(197, 199, 201);
-}
-.contactIcon:hover{
-color: aliceblue;
-}
-#AboutMe{
-font-size: medium;
-color: aliceblue;
-}
-.CV{
+
+.heroDeets {
+    color: rgb(177, 166, 166);
+    font: 1em sans-serif;
     font-size: 1.5rem;
 }
-.resume{
+
+.intro {
+    font-size: 20px !important;
+    color: rgb(97, 92, 92);
+}
+
+.contactIcon {
+    font-size: 2rem;
+    color: rgb(197, 199, 201);
+}
+
+.contactIcon:hover {
+    color: aliceblue;
+}
+
+#AboutMe {
+    font-size: medium;
+    color: aliceblue;
+}
+.aboutmetxt{
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+.CV {
+    font-size: 1.5rem;
+}
+
+ul {
+    padding-left: 0px !important;
+}
+
+#resume {
+    padding: 1rem;
+    padding-left: 0px !important;
+}
+
+.resume,
+.exp1 {
     display: flex !important;
     align-items: center;
     flex-direction: row;
     color: white;
     max-width: fit-content;
 }
-.resumelink{
+
+.resumelink {
     color: white;
     text-decoration: none;
     font-size: 3rem;
@@ -91,33 +132,52 @@ color: aliceblue;
     letter-spacing: -.025em;
     font-weight: 700;
 }
-.resume:hover{
-color: rgb(0, 26, 175)!important;
+
+.resume:hover {
+    color: rgb(0, 26, 175) !important;
 }
- .arrowbox{
+
+.arrowbox {
     height: 1rem;
     width: 1rem;
     font-size: 0.8rem;
     /* align-content: center; */
     margin-left: 5px;
-    margin-bottom:.5rem;
+    margin-bottom: .5rem;
     transition: transform 0.2s ease-in-out;
     position: relative;
- }
- .resume:hover .arrowbox{
+}
+
+.resume:hover .arrowbox {
     transform: translate(5px, -5px);
- }
- .pill{
+}
+.dotseperator{
+    display: block;
+    margin-bottom: .5rem;
+    width: 0.5rem;
+    height: 1px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: aliceblue;
+}
+.pill {
     display: block;
     width: 1.5rem;
     height: 1px;
     background-color: aliceblue;
     padding-right: 5px;
     transition: width 0.3s ease-out;
- }
- li{
+}
+
+ol,
+li {
     list-style: none;
- }
+}
+
+ol {
+    padding-left: 0px;
+}
+
 .menulink {
     display: flex;
     align-items: center;
@@ -126,11 +186,13 @@ color: rgb(0, 26, 175)!important;
     gap: 10px;
     max-width: fit-content;
     font-size: 20px;
-    
+
 }
-.menulink:hover .pill{
+
+.menulink:hover .pill {
     width: 4rem;
 }
+
 .menulink .active {
     display: flex;
     align-items: center;
@@ -139,8 +201,38 @@ color: rgb(0, 26, 175)!important;
     gap: 10px;
     max-width: fit-content;
     font-size: 20px;
-    
+
 }
-.menulink.active  .pill{
+
+.menulink.active .pill {
     width: 4rem;
+}
+
+.exp1:hover .arrowbox {
+    transform: translate(5px, -5px);
+}
+
+.techUsed {
+    --tw-text-opacity: 1;
+    color: rgb(94 234 212 / var(--tw-text-opacity));
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: .75rem;
+    line-height: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    background-color: rgba(45, 212, 191, .1);
+    border-radius: 9999px;
+    align-items: center;
+}
+.navheads{
+    color: #8080807a;
+}
+.expTime{
+    color: #ffffff99;
+}
+.leading-normal{
+    color: rgba(178, 180, 182, 0.842);
 }
