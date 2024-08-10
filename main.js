@@ -12,4 +12,11 @@ $(document).ready(function() {
     $('main').on('click', function(e) {
         $('.menulink.active').removeClass('active');
     });
+    $(".menulink").click(function() {
+        var $scrollTo=$(this).data('scroll')
+        console.log($scrollTo);
+        $('main').animate({
+            scrollTop: $('#'+$scrollTo).offset().top},
+            'slow');
+    });
 });

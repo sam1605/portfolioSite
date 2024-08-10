@@ -11,8 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="/css/custom.css">
 </head>
 
@@ -22,6 +21,7 @@
         <div class="Main p-3">
 
             <header>
+                <div class="dp"><img class="dpi" src="/assets/dp.jpeg" alt=""></div>
                 <h1 class="mb-2"><a class="hero" href="/">Sam Aditya Yedallacheruvu</a></h1>
                 <h2 class="heroDeets mb-2">Full Stack Developer</h2>
                 <div class="mb-5"><span class="intro">
@@ -31,7 +31,8 @@
                 <div class="mb-5 icons contact d-flex">
                     <a href="mailto:samaditya.y@gmail.com" target="_blank"><i
                             class="bi p-3 bi-envelope-at contactIcon"></i></a>
-                    <a href="" target="_blank"><i class="bi p-3 bi-linkedin contactIcon"></i></a>
+                    <a href="https://www.linkedin.com/in/sam-aditya-9000171a9/" target="_blank"><i
+                            class="bi p-3 bi-linkedin contactIcon"></i></a>
                     <a href="https://github.com/sam1605" target="_blank"><i
                             class="bi p-3 bi-github contactIcon"></i></a>
                     <a href="https://www.instagram.com/sierra.blues/" target="_blank"><i
@@ -48,9 +49,12 @@
                 </section>
                 <nav class="mb-5 menu">
                     <ul>
-                        <li><a class="menulink"><span class="pill"></span><span>About</span></a></li>
-                        <li><a class="menulink"><span class="pill"></span><span>Experience</span></a></li>
-                        <li><a class="menulink"><span class="pill"></span><span>Projects</span></a></li>
+                        <li><a class="menulink" data-scroll="AboutMe"><span class="pill"></span><span>About</span></a>
+                        </li>
+                        <li><a class="menulink" data-scroll="Experience"><span
+                                    class="pill"></span><span>Experience</span></a></li>
+                        <li><a class="menulink" data-scroll="Projects"><span
+                                    class="pill"></span><span>Projects</span></a></li>
                     </ul>
                 </nav>
             </header>
