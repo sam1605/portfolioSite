@@ -15,7 +15,7 @@ $(document).ready(function() {
     $(".menulink").click(function() {
         var $scrollTo=$(this).data('scroll')
         console.log($scrollTo);
-        $('main').animate({
+        $('.master').animate({
             scrollTop: $('#'+$scrollTo).offset().top},
             'slow');
     });

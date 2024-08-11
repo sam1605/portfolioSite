@@ -19,6 +19,8 @@ a {
     min-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    height: 50vh;
+    overflow-y: scroll;
 }
 .dp{
     width: 100%;
@@ -35,9 +37,8 @@ a {
     object-fit: cover; /* Ensures the image fits within the circular area */
     display: block;
 }
-main {
+/* main {
     width: 55%;
-    /* padding-top: 6rem; */
     padding-bottom: 6rem;
     overflow-y: auto;
     height: 100vh !important;
@@ -45,6 +46,7 @@ main {
 
 .Main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
 }
@@ -52,6 +54,38 @@ main {
 header {
     max-width: fit-content;
     width: 40%;
+} */
+.Main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem; /* Keeps the gap between divs on wide screens */
+}
+
+main {
+    width: 55%;
+    padding-bottom: 6rem;
+    overflow-y: auto;
+    height: 100vh !important;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+header {
+    max-width: fit-content;
+    width: 40%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Media query to adjust layout on smaller screens */
+@media (max-width: 768px) {
+    .Main {
+        flex-direction: column; /* Stack the divs */
+    }
+
+    main,
+    header {
+        width: 100%; /* Make both divs take up full width */
+    }
 }
 
 .highlight {
