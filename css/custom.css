@@ -1,3 +1,43 @@
+
+/* Apply to all scrollbars across the page */
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Thumb color and track color */
+}
+
+/* WebKit Browsers (Chrome, Safari) */
+*::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar (for horizontal scrollbars) */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track */
+}
+
+/* Hide scrollbar completely when not scrolling */
+* {
+    overflow: -moz-scrollbars-none; /* For older versions of Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* For modern versions of Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent default scrolling */
+}
 body {
     margin: 0;
     padding: 0;
@@ -19,6 +59,7 @@ a {
     min-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    overflow-y: auto; 
 }
 .dp{
     width: 100%;
@@ -35,9 +76,8 @@ a {
     object-fit: cover; /* Ensures the image fits within the circular area */
     display: block;
 }
-main {
+/* main {
     width: 55%;
-    /* padding-top: 6rem; */
     padding-bottom: 6rem;
     overflow-y: auto;
     height: 100vh !important;
@@ -45,6 +85,7 @@ main {
 
 .Main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
 }
@@ -52,6 +93,38 @@ main {
 header {
     max-width: fit-content;
     width: 40%;
+} */
+.Main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem; /* Keeps the gap between divs on wide screens */
+}
+
+main {
+    width: 55%;
+    padding-bottom: 6rem;
+    overflow-y: auto;
+    height: 100vh !important;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+header {
+    max-width: fit-content;
+    width: 40%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Media query to adjust layout on smaller screens */
+@media (max-width: 768px) {
+    .Main {
+        flex-direction: column; /* Stack the divs */
+    }
+
+    main,
+    header {
+        width: 100%; /* Make both divs take up full width */
+    }
 }
 
 .highlight {
@@ -134,23 +207,23 @@ ul {
     display: flex !important;
     align-items: center;
     flex-direction: row;
-    color: white;
+    color: rgb(255, 255, 255);
     max-width: fit-content;
 }
 
 .resumelink {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 3rem;
     line-height: 1;
     opacity: 0.8;
-    color: rgb(235, 229, 229);
+    color: rgb(255, 255, 255);
     letter-spacing: -.025em;
     font-weight: 700;
 }
 
-.resume:hover {
-    color: rgb(23, 209, 219) !important;
+.resume:hover ,h3:hover {
+    color: rgb(25, 232, 243) !important;
 }
 
 .arrowbox {

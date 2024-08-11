@@ -22,4 +22,27 @@ $(document).ready(function() {
             scrollTop: $('#'+$scrollTo).offset().top},
             'slow');
     });
+    function adjustHeight() {
+        // Get the current zoom level
+        var zoomLevel = window.devicePixelRatio || 1;
+        
+        // Calculate the available height based on zoom level
+        var availableHeight = window.innerHeight / zoomLevel;
+        
+        // Set the height of the main-content div
+        $('.master').css('height', availableHeight + 'px');
+    }
+
+    // Call adjustHeight on load
+    adjustHeight();
+    
+    // Call adjustHeight on window resize
+    $(window).on('resize', function() {
+        adjustHeight();
+    });
+
+    // Call adjustHeight on zoom change (debounce to prevent multiple calls)
+    $(window).on('resize', function() {
+        setTimeout(adjustHeight, 100);
+    });
 });
