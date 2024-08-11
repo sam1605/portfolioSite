@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    background: rgb(0, 0, 0);
+    background: rgb(1, 12, 34);
     /* background: linear-gradient(rgb(0, 0, 0) 80%,rgba(128, 128, 128, 0.466) 20%); */
 
 }
@@ -58,13 +58,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 700px;
+    width: 950px;
     /* Increased size */
-    height: 700px;
+    height: 950px;
     /* Increased size */
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.095) 0%, rgba(255, 255, 255, 0) 90%);
+    background: radial-gradient(circle, #293c4728 0%, rgba(255, 255, 255, 0) 100%);
     pointer-events: none;
-    border-radius: 50%;
+    border-radius: 90%;
     /* Ensures the circle shape */
     transform: translate(-50%, -50%);
     transition: background 0.3s ease-out;
@@ -150,7 +150,7 @@ ul {
 }
 
 .resume:hover {
-    color: rgb(0, 26, 175) !important;
+    color: rgb(23, 209, 219) !important;
 }
 
 .arrowbox {
@@ -226,6 +226,9 @@ ol {
 
 .exp1:hover .arrowbox {
     transform: translate(5px, -5px);
+}
+.exp1:hover{
+    color: rgb(23, 209, 219) !important;
 }
 
 .techUsed {
