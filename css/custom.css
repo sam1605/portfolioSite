@@ -1,10 +1,50 @@
+
+/* Apply to all scrollbars across the page */
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Thumb color and track color */
+}
+
+/* WebKit Browsers (Chrome, Safari) */
+*::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar (for horizontal scrollbars) */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track */
+}
+
+/* Hide scrollbar completely when not scrolling */
+* {
+    overflow: -moz-scrollbars-none; /* For older versions of Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* For modern versions of Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent default scrolling */
+}
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    background: rgb(0, 0, 0);
+    background: rgb(1, 12, 34);
     /* background: linear-gradient(rgb(0, 0, 0) 80%,rgba(128, 128, 128, 0.466) 20%); */
 
 }
@@ -19,8 +59,7 @@ a {
     min-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    height: 50vh;
-    overflow-y: scroll;
+    overflow-y: auto; 
 }
 .dp{
     width: 100%;
@@ -92,13 +131,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 700px;
+    width: 950px;
     /* Increased size */
-    height: 700px;
+    height: 950px;
     /* Increased size */
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.095) 0%, rgba(255, 255, 255, 0) 90%);
+    background: radial-gradient(circle, #293c4728 0%, rgba(255, 255, 255, 0) 100%);
     pointer-events: none;
-    border-radius: 50%;
+    border-radius: 90%;
     /* Ensures the circle shape */
     transform: translate(-50%, -50%);
     transition: background 0.3s ease-out;
@@ -168,23 +207,23 @@ ul {
     display: flex !important;
     align-items: center;
     flex-direction: row;
-    color: white;
+    color: rgb(255, 255, 255);
     max-width: fit-content;
 }
 
 .resumelink {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 3rem;
     line-height: 1;
     opacity: 0.8;
-    color: rgb(235, 229, 229);
+    color: rgb(255, 255, 255);
     letter-spacing: -.025em;
     font-weight: 700;
 }
 
-.resume:hover {
-    color: rgb(0, 26, 175) !important;
+.resume:hover ,h3:hover {
+    color: rgb(25, 232, 243) !important;
 }
 
 .arrowbox {
@@ -260,6 +299,9 @@ ol {
 
 .exp1:hover .arrowbox {
     transform: translate(5px, -5px);
+}
+.exp1:hover{
+    color: rgb(23, 209, 219) !important;
 }
 
 .techUsed {
