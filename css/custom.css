@@ -222,7 +222,7 @@ ul {
     font-weight: 700;
 }
 
-.resume:hover {
+.resume:hover,.resumelink:hover {
     color: rgb(0, 255, 187) !important;
 }
 
