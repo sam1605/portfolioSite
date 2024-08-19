@@ -1,43 +1,60 @@
-
 /* Apply to all scrollbars across the page */
+.txt {
+    color: white;
+}
 
 /* For Firefox */
 * {
-    scrollbar-width: thin; /* Makes the scrollbar thinner */
-    scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Thumb color and track color */
+    scrollbar-width: thin;
+    /* Makes the scrollbar thinner */
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    /* Thumb color and track color */
 }
 
 /* WebKit Browsers (Chrome, Safari) */
 *::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
-    height: 8px; /* Height of the scrollbar (for horizontal scrollbars) */
+    width: 8px;
+    /* Width of the scrollbar */
+    height: 8px;
+    /* Height of the scrollbar (for horizontal scrollbars) */
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Roundness of the scrollbar thumb */
 }
 
 *::-webkit-scrollbar-track {
-    background: transparent; /* Transparent track */
+    background: transparent;
+    /* Transparent track */
 }
 
 /* Hide scrollbar completely when not scrolling */
 * {
-    overflow: -moz-scrollbars-none; /* For older versions of Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    scrollbar-width: none; /* For modern versions of Firefox */
+    overflow: -moz-scrollbars-none;
+    /* For older versions of Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* For modern versions of Firefox */
 }
 
 *::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+    display: none;
+    /* Safari and Chrome */
 }
-body, html {
+
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden; /* Prevent default scrolling */
+    overflow: hidden;
+    /* Prevent default scrolling */
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -48,10 +65,12 @@ body {
     /* background: linear-gradient(rgb(0, 0, 0) 80%,rgba(128, 128, 128, 0.466) 20%); */
 
 }
+
 a {
     color: none;
     text-decoration: none;
 }
+
 .master {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -59,23 +78,32 @@ a {
     min-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
-.dp{
+
+.dp {
     width: 100%;
     height: 20%;
-    
+
 }
-.dpi{
+
+.dpi {
     width: 100%;
     height: 100%;
-    width: 150px; /* Adjust the size of the circle */
-    height: 150px; /* Ensure the height matches the width */
-    border-radius: 50%; /* Creates the circular shape */
-    border: 3px solid #333; /* Optional: Add a border around the image */
-    object-fit: cover; /* Ensures the image fits within the circular area */
+    width: 150px;
+    /* Adjust the size of the circle */
+    height: 150px;
+    /* Ensure the height matches the width */
+    border-radius: 50%;
+    /* Creates the circular shape */
+    border: 3px solid #333;
+    /* Optional: Add a border around the image */
+    object-fit: cover;
+    /* Ensures the image fits within the circular area */
     display: block;
+    margin-bottom: 3rem;
 }
+
 /* main {
     width: 55%;
     padding-bottom: 6rem;
@@ -98,7 +126,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem; /* Keeps the gap between divs on wide screens */
+    gap: 2rem;
+    /* Keeps the gap between divs on wide screens */
 }
 
 main {
@@ -106,24 +135,28 @@ main {
     padding-bottom: 6rem;
     overflow-y: auto;
     height: 100vh !important;
-    box-sizing: border-box; /* Ensures padding is included in the width */
+    box-sizing: border-box;
+    /* Ensures padding is included in the width */
 }
 
 header {
     max-width: fit-content;
     width: 40%;
-    box-sizing: border-box; /* Ensures padding is included in the width */
+    box-sizing: border-box;
+    /* Ensures padding is included in the width */
 }
 
 /* Media query to adjust layout on smaller screens */
 @media (max-width: 768px) {
     .Main {
-        flex-direction: column; /* Stack the divs */
+        flex-direction: column;
+        /* Stack the divs */
     }
 
     main,
     header {
-        width: 100%; /* Make both divs take up full width */
+        width: 100%;
+        /* Make both divs take up full width */
     }
 }
 
@@ -183,10 +216,10 @@ header {
     font-size: medium;
     color: aliceblue;
 }
-.aboutmetxt{
-    font-size: 1.2rem;
-    font-family:Arial, Helvetica, sans-serif
 
+.aboutmetxt {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .CV {
@@ -222,7 +255,8 @@ ul {
     font-weight: 700;
 }
 
-.resume:hover,.resumelink:hover {
+.resume:hover,
+.resumelink:hover {
     color: rgb(0, 255, 187) !important;
 }
 
@@ -240,7 +274,8 @@ ul {
 .resume:hover .arrowbox {
     transform: translate(5px, -5px);
 }
-.dotseperator{
+
+.dotseperator {
     display: block;
     margin-bottom: .5rem;
     width: 0.5rem;
@@ -249,6 +284,7 @@ ul {
     margin-right: 0.5rem;
     background-color: aliceblue;
 }
+
 .pill {
     display: block;
     width: 1.5rem;
@@ -300,7 +336,8 @@ ol {
 .exp1:hover .arrowbox {
     transform: translate(5px, -5px);
 }
-.exp1:hover{
+
+.exp1:hover {
     color: #0cf37f !important;
 }
 
@@ -319,12 +356,96 @@ ol {
     border-radius: 9999px;
     align-items: center;
 }
-.navheads{
+
+.navheads {
     color: #8080807a;
 }
-.expTime{
+
+.expTime {
     color: #ffffff99;
 }
-.leading-normal{
+
+.leading-normal {
     color: rgba(178, 182, 180, 0.842);
+}
+
+.pp1 {
+    display: none;
+    width: 100% !important;
+}
+
+.moveon {
+    animation-name: moveon;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveon {
+    0% {
+        transform: translateX(0);
+        /* opacity: 1; */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* opacity: 0; */
+    }
+}
+
+.moveon-reverse {
+    animation-name: moveon-reverse;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveon-reverse {
+    0% {
+        transform: translateX(0);
+        /* opacity: 1; */
+    }
+
+    100% {
+        transform: translateX(100%);
+        /* opacity: 0; */
+    }
+}
+
+.moveoff {
+    animation-name: moveoff;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveoff {
+    0% {
+        transform: translateX(-100%);
+        /* opacity: 1; */
+    }
+
+    100% {
+        transform: translateX(0%);
+        /* opacity: 0; */
+    }
+}
+
+.moveoff-reverse {
+    animation-name: moveoff-reverse;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveoff-reverse {
+    0% {
+        transform: translateX(100%);
+        /* opacity: 1; */
+    }
+
+    100% {
+        transform: translateX(0%);
+        /* opacity: 0; */
+    }
 }
