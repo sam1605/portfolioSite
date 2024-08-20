@@ -311,6 +311,7 @@ ol {
     gap: 10px;
     max-width: fit-content;
     font-size: 20px;
+    cursor: pointer;
 
 }
 
@@ -371,11 +372,13 @@ ol {
 
 .pp1 {
     display: none;
-    width: 100% !important;
+    width: 80% !important;
 }
-#exampleModal{
+
+#exampleModal {
     display: none;
 }
+
 .moveDown {
     animation-name: moveDown;
     animation-duration: 1s;
@@ -488,4 +491,15 @@ ol {
         transform: translateX(0%);
         /* opacity: 0; */
     }
+}
+.expc{
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    padding: 20px;
+    border-radius: 8px;
+    cursor:pointer;
+}
+.expc:hover {
+    transform: scale(0.95); /* Slightly enlarge the div */
+    box-shadow:0px 10px 20px rgba(0, 0, 0, 0.2), /* Top and bottom shadow */
+    10px 0px 20px rgba(0, 0, 0, 0.2); 
 }

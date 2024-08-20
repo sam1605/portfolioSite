@@ -19,10 +19,24 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.5.136/pdf.min.mjs"></script>
     <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/component.css">
 </head>
 
 <body>
     <div class="highlight"></div>
+    <div class="loader">
+        <div class="terminal-loader">
+            <div class="terminal-header">
+                <div class="terminal-title">Status</div>
+                <div class="terminal-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+            </div>
+            <div class="text">Loading...</div>
+        </div>
+    </div>
     <div class=" master mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div class="Main p-3">
 
@@ -108,7 +122,7 @@
                     <section class="mt-4" id="Experience">
                         <h5 class="navheads">Experience</h5>
                         <ol>
-                            <li class="kagool">
+                            <li class="expc kagool">
                                 <div class="d-flex gap-5">
                                     <header class="expTime">2022 - Present</header>
                                     <div class="flex flex-column w-100">
@@ -154,6 +168,8 @@
 </body>
 <script src="main.js"></script>
 <script src="markup.js"></script>
+<script src="blockUI.js"></script>
+<script src="events.js"></script>
 </body>
 
 </html>

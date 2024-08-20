@@ -42,7 +42,7 @@ markup =
     '<div class="prj">'+
     '<h5 class="expTime">SAP Chat Bot</h5>' +
     '<div class=" mb-2 d-flex gap-2 flex-row">'+
-    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2">Node.js, MS SQL</div><br>' +
+    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2">Node.js</div><div class="techUsed mr-1.5 mt-2"> MS SQL</div><br>' +
     '</div>'+
     '<ul>'+
     'Integrated custom APIs to fetch vendor, warehouse, and shipping data from SAP,' +
