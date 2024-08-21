@@ -294,8 +294,8 @@ ul {
     transition: width 0.3s ease-out;
 }
 
-ol,
-li {
+.tech > ol,
+.tech > li {
     list-style: none;
 }
 
@@ -364,6 +364,9 @@ ol {
 
 .expTime {
     color: #ffffff99;
+}
+.expTime:hover {
+    color: #00ff9d;
 }
 
 .leading-normal {
