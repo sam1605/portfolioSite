@@ -14,53 +14,47 @@ markup =
     '</button>' +
     '</div>' +
     '<div class="body txt EMB">' +
-    '<h4> Projects Worked On:</h4><br>' +
+    '<h4> Projects Worked On:</h4>' +
     '<div class="prj">'+
-    '<h5 class="expTime">Konnect CRM System</h5>' +
+    '<h5 class="expTime">Konnect CRM System</h5><h5 class="expTime" style="font-style: italic;"> (Kagool)</h5>' +
     '<div class=" mb-2 d-flex gap-2 flex-row">'+
-    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2">MS SQL</div> <br>' +
+    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2">MS SQL</div> ' +
     '</div>'+
     '<ul>'+
     '<li>Developed a Timesheet project to track employee time booking with features like Leave</li>' +
-    '<li>Management, Employee Management, and Project Management modules.<br></li>' +
-    '<li>Generated PBI Reports monthly by calculating employee time bookings for each project.<br></li>' +
-    '<li>Implemented an IT Service Management (ITSM) module that streamlined ticket issuance based on employee requests; improved ticket resolution speed by 40%.<br><br></li>' +
+    '<li>Management, Employee Management, and Project Management modules.</li>' +
+    '<li>Generated PBI Reports monthly by calculating employee time bookings for each project.</li>' +
+    '<li>Implemented an IT Service Management (ITSM) module that streamlined ticket issuance based on employee requests; improved ticket resolution speed by 40%.</li>' +
     '</ul>'+
     '</div>'+
     '<div class="prj">'+
-    '<h5 class="expTime">Medical File Manager (ICU Medical & Smiths Medical)</h5>' +
+    '<div class="d-flex"><h5 class="expTime">Medical File Manager</h5><h5 class="expTime" style="font-style: italic;"> (ICU Medical & Smiths Medical)</h5><i class="bi arrowbox bi-arrow-up-right"hidden></i></div>' +
     '<div class=" mb-2 d-flex gap-2 flex-row">'+
-    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2"> MS SQL</div><br>' +
+    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2"> MS SQL</div>' +
     '</div>'+
     '<ul>'+
-    'Developed a global file-sharing application with Azure AD authentication and Oracle' +
-    'Service Cloud integration. <br>' +
-    'Key functionalities include file uploads using SASS tokens and version management for' +
-    'each file.<br><br>' +
+    '<li>Developed a global file-sharing application with Azure AD authentication and Oracle Service Cloud integration.</li> ' +
+    '<li>Key functionalities include file uploads using SASS tokens and version management for each file.</li>' +
     '</ul>'+
     '</div>'+
     '<div class="prj">'+
-    '<h5 class="expTime">SAP Chat Bot</h5>' +
+    '<h5 class="expTime">SAP Chat Bot</h5><h5 class="expTime" style="font-style: italic;"> (Kagool)</h5>' +
     '<div class=" mb-2 d-flex gap-2 flex-row">'+
-    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2">Node.js</div><div class="techUsed mr-1.5 mt-2"> MS SQL</div><br>' +
+    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2">Node.js</div><div class="techUsed mr-1.5 mt-2"> MS SQL</div>' +
     '</div>'+
     '<ul>'+
-    'Integrated custom APIs to fetch vendor, warehouse, and shipping data from SAP,' +
-    'automating data retrieval through a chatbot developed using C# and the Microsoft Bot' +
-    'Framework.<br><br>' +
+    '<li>Integrated custom APIs to fetch vendor, warehouse, and shipping data from SAP, automating data retrieval through a chatbot developed using C# and the Microsoft Bot Framework.</li>' +
     '</ul>'+
     '</div>'+
     '<div class="prj">'+
-    '<h5 class="expTime">Intelligent Data Platform Portal (Al Futtaim Group)</h5>' +
+    '<div class="d-flex"><h5 class="expTime">Intelligent Data Platform Portal</h5><h5 class="expTime" style="font-style: italic;"> (Al Futtaim Group)</h5><i class="bi arrowbox bi-arrow-up-right" hidden></i></div>' +
     '<div class=" mb-2 d-flex gap-2 flex-row">'+
-    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2"> Node.js</div><div class="techUsed mr-1.5 mt-2"> MS SQL DB</div><div class="techUsed mr-1.5 mt-2">MongoDB</div> <br>' +
+    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2"> Node.js</div><div class="techUsed mr-1.5 mt-2"> MS SQL DB</div><div class="techUsed mr-1.5 mt-2">MongoDB</div> ' +
     '</div>'+
     '<ul>'+
-    'Developed a metadata-driven framework as an alternative to Microsoft Azure Data' +
-    'Factory, providing enhanced data manipulation capabilities. <br>' +
-    'Created robust data pipelines to ingest and transform data from multiple sources, with' +
-    'real-time updates and data insights presented through tables, graphs, and reports. <br>' +
-    'Implemented role-based access control and centralized access management. <br><br>' +
+    '<li>Developed a metadata-driven framework as an alternative to Microsoft Azure Data Factory, providing enhanced data manipulation capabilities.</li>' +
+    '<li>Created robust data pipelines to ingest and transform data from multiple sources, with real-time updates and data insights presented through tables, graphs, and reports.</li>' +
+    '<li>Implemented role-based access control and centralized access management. ' +
     '</ul>'+
     '</div>'+
     '</div>' +
