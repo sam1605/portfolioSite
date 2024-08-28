@@ -45,7 +45,12 @@
     display: none;
     /* Safari and Chrome */
 }
-
+.txt-light {
+    color: rgb(0, 0, 0)!important;
+}
+bg-light{
+    background: rgb(206, 206, 206)!important;
+}
 body,
 html {
     margin: 0;
@@ -61,7 +66,6 @@ body {
     font-family: Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    background: rgb(35, 38, 45);
     /* background: linear-gradient(rgb(0, 0, 0) 80%,rgba(128, 128, 128, 0.466) 20%); */
 
 }
@@ -75,7 +79,7 @@ a {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     max-width: 1280px;
-    min-height: 100vh;
+    max-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
     overflow-y: auto;
@@ -359,6 +363,11 @@ ol {
     background-color: rgba(11, 239, 159, 0.1);
     border-radius: 9999px;
     align-items: center;
+}
+.nav{
+    flex-direction: row-reverse;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .navheads {
