@@ -18,7 +18,7 @@ markup =
     '<div class="prj">'+
     '<h5 class="expTime">Konnect CRM System</h5><h5 class="expTime" style="font-style: italic;"> (Kagool)</h5>' +
     '<div class=" mb-2 d-flex gap-2 flex-row">'+
-    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2">MS SQL</div> ' +
+    '<div class="techUsed-dark mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed-dark mr-1.5 mt-2">MS SQL</div> ' +
     '</div>'+
     '<ul>'+
     '<li>Developed a Timesheet project to track employee time booking with features like Leave</li>' +
@@ -30,7 +30,7 @@ markup =
     '<div class="prj">'+
     '<div class="d-flex"><h5 class="expTime">Medical File Manager</h5><h5 class="expTime" style="font-style: italic;"> (ICU Medical & Smiths Medical)</h5><i class="bi arrowbox bi-arrow-up-right"hidden></i></div>' +
     '<div class=" mb-2 d-flex gap-2 flex-row">'+
-    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2"> MS SQL</div>' +
+    '<div class="techUsed-dark mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed-dark mr-1.5 mt-2"> MS SQL</div>' +
     '</div>'+
     '<ul>'+
     '<li>Developed a global file-sharing application with Azure AD authentication and Oracle Service Cloud integration.</li> ' +
@@ -40,7 +40,7 @@ markup =
     '<div class="prj">'+
     '<h5 class="expTime">SAP Chat Bot</h5><h5 class="expTime" style="font-style: italic;"> (Kagool)</h5>' +
     '<div class=" mb-2 d-flex gap-2 flex-row">'+
-    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2">Node.js</div><div class="techUsed mr-1.5 mt-2"> MS SQL</div>' +
+    '<div class="techUsed-dark mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed-dark mr-1.5 mt-2">Node.js</div><div class="techUsed-dark mr-1.5 mt-2"> MS SQL</div>' +
     '</div>'+
     '<ul>'+
     '<li>Integrated custom APIs to fetch vendor, warehouse, and shipping data from SAP, automating data retrieval through a chatbot developed using C# and the Microsoft Bot Framework.</li>' +
@@ -49,7 +49,7 @@ markup =
     '<div class="prj">'+
     '<div class="d-flex"><h5 class="expTime">Intelligent Data Platform Portal</h5><h5 class="expTime" style="font-style: italic;"> (Al Futtaim Group)</h5><i class="bi arrowbox bi-arrow-up-right" hidden></i></div>' +
     '<div class=" mb-2 d-flex gap-2 flex-row">'+
-    '<div class="techUsed mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed mr-1.5 mt-2"> Node.js</div><div class="techUsed mr-1.5 mt-2"> MS SQL DB</div><div class="techUsed mr-1.5 mt-2">MongoDB</div> ' +
+    '<div class="techUsed-dark mr-1.5 mt-2">Dot NET MVC</div><div class="techUsed-dark mr-1.5 mt-2"> Node.js</div><div class="techUsed-dark mr-1.5 mt-2"> MS SQL DB</div><div class="techUsed-dark mr-1.5 mt-2">MongoDB</div> ' +
     '</div>'+
     '<ul>'+
     '<li>Developed a metadata-driven framework as an alternative to Microsoft Azure Data Factory, providing enhanced data manipulation capabilities.</li>' +
