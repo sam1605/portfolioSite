@@ -1,0 +1,238 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  padding: 0px 50px;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: transparent;
+  transition: var(--transition);
+}
+
+.header.scrolled {
+  height: var(--nav-scroll-height);
+  background-color: var(--bg-scrolled);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px -10px var(--bg-shadow);
+}
+
+.header.hidden-init {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header.visible-init {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-logo {
+  width: 42px;
+  height: 42px;
+}
+
+.header-brand {
+  font-family: var(--font-mono);
+  font-size: var(--fz-md);
+  font-weight: 600;
+  color: var(--text-heading);
+  letter-spacing: 0.05em;
+}
+
+.header-brand-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: var(--fz-md);
+  font-weight: 600;
+  color: var(--text-heading);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.logo-name:hover {
+  color: var(--accent);
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--border-radius);
+  background-color: var(--bg-scrolled);
+  height: 40px;
+}
+
+.nav-center .nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 32px;
+}
+
+.nav-center .nav-link {
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+
+.nav-center .nav-link a {
+  color: var(--text-heading);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-right .resume-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 1rem;
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  border-radius: var(--border-radius);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  line-height: 1;
+}
+
+.nav-right .theme-toggle {
+  height: 40px;
+  width: 40px;
+  margin: 0;
+}
+
+.hamburger {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: transparent;
+}
+.logo-button{
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 1rem;
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 100px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  line-height: 1;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: min(75vw, 400px);
+  height: 100vh;
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-800);
+  box-shadow: 10px 0px 30px -15px var(--bg-shadow);
+  transform: translateX(100%);
+  transition: var(--transition);
+  z-index: 11;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-menu .nav {
+  width: 100%;
+}
+
+.mobile-menu .nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px 24px;
+}
+
+.mobile-menu .nav-link {
+  font-family: var(--font-mono);
+  font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
+}
+
+.mobile-menu .nav-link a {
+  color: var(--text-heading);
+}
+
+.mobile-menu .nav-link-number {
+  color: var(--accent);
+  margin-right: 8px;
+}
+
+.mobile-menu .resume-button {
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--fz-sm);
+  line-height: 1;
+}
+
+.mobile-menu .nav-extra,
+.mobile-menu .nav-toggle {
+  margin-top: 10px;
+}
+
+@media (max-width: 1080px) {
+  .header {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-center {
+    display: none;
+  }
+  .nav-right {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}

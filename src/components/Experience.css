@@ -1,0 +1,88 @@
+.experience-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.experience-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.experience-tab-highlight {
+  position: absolute;
+  left: 0;
+  top: var(--tab-active-top, 0px);
+  width: 2px;
+  height: 60px;
+  border-radius: var(--border-radius);
+  background: var(--accent);
+  transition: var(--transition);
+}
+
+.experience-tab {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-md);
+  text-align: left;
+  white-space: pre-wrap;
+  background: transparent;
+  color: var(--text-body);
+  transition: var(--transition);
+}
+
+.experience-tab.active {
+  color: var(--accent);
+}
+
+.experience-tab:hover {
+  color: var(--accent);
+  background-color: var(--bg-800);
+}
+
+.experience-panel {
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+    flex-direction: column;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .experience-title {
+      margin-bottom: 5px;
+      font-size: var(--fz-xxl);
+    }
+    
+    .experience-title .job-title {
+      color: var(--text-heading);
+    }
+    
+    .experience-company {
+      color: var(--accent);
+    }
+    
+    .experience-company a {
+      color: var(--accent);
+    }
+    
+    .experience-range {
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
+      color: var(--text-secondary);
+      margin: 0 0 25px;
+    }
+    
+    .experience-description {
+      color: var(--text-body);
+    }
+    
+    .experience-description li {
+      line-height: 1.5;
+    }

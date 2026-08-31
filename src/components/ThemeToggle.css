@@ -1,0 +1,27 @@
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  margin-left: 16px;
+  margin-right: 4px;
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.theme-toggle.in-menu {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.theme-toggle:hover {
+  background-color: var(--accent-tint);
+}
+
+.theme-toggle:hover svg {
+  color: var(--accent);
+}

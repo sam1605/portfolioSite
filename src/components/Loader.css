@@ -1,0 +1,52 @@
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-950);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.loader.mounted {
+  opacity: 1;
+}
+
+.loader.hiding {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.loader-text {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: clamp(28px, 6vw, 56px);
+  letter-spacing: 0.12em;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+      var(--text-strong),
+      var(--text-strong)
+    ),
+    linear-gradient(var(--text-muted), var(--text-muted));
+  background-repeat: no-repeat;
+  background-size: 100% 0%, 100% 100%;
+  background-position: 0 100%, 0 0;
+  -webkit-text-fill-color: transparent;
+  animation: loadFill 2.4s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes loadFill {
+  0% {
+    background-size: 100% 0%, 100% 100%;
+  }
+  100% {
+    background-size: 100% 100%, 100% 100%;
+  }
+}
